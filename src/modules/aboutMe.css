@@ -1,0 +1,32 @@
+
+.about-me {
+    position: absolute;
+    width: 28em;
+    min-width: 10em;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    left: 36.5%;
+    gap: 1em;
+}
+
+.content__heading--container {
+    height: 4em;
+    flex-shrink: 0;
+}
+
+.content__heading {
+    font-family: 'General Sans BoldItalic';
+    font-size: 3rem;
+}
+
+.content__info-container {
+    font-family: 'General Sans Regular';
+    display: flex;
+/*     flex-grow: 1;
+ */}
+
+ .frontend-developer, .uxui-designer {
+    font-family: 'General Sans Bold';
+    font-size: 2rem;
+ }
