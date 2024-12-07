@@ -1,0 +1,41 @@
+.navbar {
+    
+    font-family: 'General Sans Regular';
+    width: 100%;
+    position: absolute;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3em;
+    z-index: 999;
+}
+
+.navbar__list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar__link {
+    color: var(--yellow);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar__wrapper {
+    min-width:90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar__wrapper--logo {
+    display: flex;
+    justify-self: flex-end;
+}
+
+.navbar__logo {
+    width: 35px;
+    height: auto;
+}
+
