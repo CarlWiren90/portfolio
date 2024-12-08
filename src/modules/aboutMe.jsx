@@ -8,12 +8,22 @@ const AboutMe = () => {
                 <section className="content__heading--container">
                     <h1 className="content__heading">About me.</h1>
                 </section>
-                <section className="content__info-container">
+
+                <section className="content__info-container content__info-container--about-me">
                     <h2 className="content__info">
                     I’m Carl Wirén and I’m a  
-                    <span className="frontend-developer"> <br></br>Frontend developer</span> & <span className="uxui-designer">UX/UI </span> 
+                    <span className="bold"> <br></br>Frontend developer</span> & <span className="bold">UX/UI </span> 
                     designer based out of Malmö, Sweden.
                     </h2>
+                    <h2>
+                    <br></br>
+                    I love creating beautiful applications with <span className="bold">Javascript</span>,<span className="bold">Typescript</span>  and <span className="bold">CSS</span>.
+                    </h2>
+                </section>
+                
+                <section className="button-container">
+                    <a className="button button--download-cv" aria-label="Download CV">Download CV</a>
+                    <a className="button button--contact-me" aria-label="Contact me">Contact me</a>
                 </section>
             </section>
         </>
