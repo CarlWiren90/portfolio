@@ -10,7 +10,7 @@ const Skillset = () => {
                 </section>
 
                 <section className="content__info-container content__info-container--skillset">
-                    <h2 className="content__info">
+                    <h2 className="content__info content__info--skillset">
                         <ul className='skillset__list'>
                             <li className='skillset__item'>React.js</li>
                             <li className='skillset__item'>JavaScript</li>

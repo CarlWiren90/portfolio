@@ -15,11 +15,8 @@
     font-size: 3rem;
 }
 
- .content__info--skillset {
-    font-size: 1.5rem;
-    font-weight: 600;
- }
-
- li {
-    list-style: none;
- }
+@media screen and (max-width:430px) {
+    .main__content {
+        padding: 0 2em;
+    }
+}
