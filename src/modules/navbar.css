@@ -68,3 +68,9 @@
         opacity: 1;
     }
 }
+
+@media screen and (max-width:430px) {
+    .navbar {
+        padding: 0 1.5em;
+    }
+}

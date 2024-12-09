@@ -10,7 +10,7 @@ const AboutMe = () => {
                 </section>
 
                 <section className="content__info-container content__info-container--about-me">
-                    <h2 className="content__info">
+                    <h2 className="content__info content__info--about-me">
                     My name is Carl Wirén and I’m a  
                     <span className="bold"> <br></br>Frontend developer</span> & <span className="bold">UX/UI </span> 
                     designer based out of <span className="bold">Malmö, Sweden</span>.
