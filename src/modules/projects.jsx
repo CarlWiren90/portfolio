@@ -1,7 +1,10 @@
 import './projects.css';
 import React from 'react';
+import { projectsList } from './projectsList';
 
 const Projects = () => {
+    
+
     return (
         <>
             <section className="projects">

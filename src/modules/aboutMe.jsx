@@ -22,8 +22,8 @@ const AboutMe = () => {
                 </section>
                 
                 <section className="button-container">
-                    <a className="button button--download-cv" href="/CarlWiren-CV.pdf" download="CarlWiren-CV.pdf" aria-label="Download CV">Download CV</a>
-                    <a className="button button--contact-me" aria-label="Contact me">Contact me</a>
+                    <a className="button button--download-cv" href="/Carl-Wiren-CV-portfolio.pdf" download="CarlWiren-CV.pdf" aria-label="Download CV">Download CV</a>
+                    <a className="button button--contact-me" href="mailto:carlwiren90@gmail.com" aria-label="Contact me">Contact me</a>
                 </section>
             </section>
         </>

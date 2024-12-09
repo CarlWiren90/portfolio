@@ -13,7 +13,8 @@ const MainContent = () => {
             muted
             loop
             playsInline>
-                <source src="/video/site-video-1028.mp4" type="video/mp4"/>
+                <source src="/video/site-video-1028.mp4" type="video/mp4" media="all and (min-width: 481px"/>
+                <source src="/video/site-video-720.mp4" type="video/mp4" media="all and (max-width: 480px"/>
             </video>
 
         <section className="main__content">
