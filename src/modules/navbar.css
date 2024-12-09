@@ -2,7 +2,7 @@
     font-family: 'General Sans Regular';
     width: 100%;
     position: absolute;
-    height: 5em;
+    height: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
 
 .navbar__link {
     color: var(--yellow);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
 }
 

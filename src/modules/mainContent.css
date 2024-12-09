@@ -21,10 +21,11 @@ main {
     flex-direction: column;
     width: 28em;
     min-width: 4em;
-    height: 80%;
+    height: 85%;
     position: absolute;
     overflow-y: scroll;
     scrollbar-width: none;
+    scroll-behavior: smooth;
     gap: 5em;
     
 }
