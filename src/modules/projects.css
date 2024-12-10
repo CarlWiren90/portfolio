@@ -15,6 +15,32 @@
     font-size: 3rem;
 }
 
+.image__container {
+    position: relative;
+}
+
+.project__image {
+    width: 25em;
+    height: 25em;
+}
+
+.displayed {
+    content: '';
+    position: absolute;
+    width: 50em;
+    height: 30em;
+    background-color: red;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.content__info-container--projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
 @media screen and (max-width:430px) {
     .main__content {
         padding: 0 2em;
