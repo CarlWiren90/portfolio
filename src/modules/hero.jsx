@@ -17,10 +17,11 @@ const Hero = () => {
                 <div className='heading-wrapper'>
                     <h1 className='heading heading__hero--frontend'>FRONTEND</h1>
                     <h1 className='heading heading__hero--developer'>DEVELOPER</h1>
-                    <section className='heading__status'>
-                    <span className='status'>Status: </span>
-                </section> 
                 </div>   
+                <section className='heading__status'>
+                    <span className='status'>Status:</span>
+                    <span className='status__info'>Looking for internship</span>
+                </section> 
             </section>
 
             <section className='image__container image__container--hero'>
