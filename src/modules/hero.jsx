@@ -1,10 +1,24 @@
 import './hero.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { useEffect } from 'react';
 
 const Hero = () => {
+    const [runAnimation, setRunAnimation] = useState(true);
 
+    useEffect(() => {
+        if (runAnimation) {
+            const letterO = document.querySelector('.o');
+            letterO.classList.add('letter-animation');  
+            setRunAnimation(false);
 
+            setTimeout(() => {
+                setRunAnimation(true);
+                console.log(runAnimation)
+            }, 2500);
+        }
+
+            
+    }, []);
 
     return (
         <section className='section section--hero'>
@@ -15,7 +29,7 @@ const Hero = () => {
                 </div>
                 <span className='hero-line'></span>
                 <div className='heading-wrapper'>
-                    <h1 className='heading heading__hero--frontend'>FRONTEND</h1>
+                    <h1 className='heading heading__hero--frontend'>FR<span className='o'>O</span>NTEND</h1>
                     <h1 className='heading heading__hero--developer'>DEVELOPER</h1>
                 </div>   
                 <section className='heading__status'>
