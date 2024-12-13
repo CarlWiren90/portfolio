@@ -89,12 +89,12 @@
     max-width: 20em;
     max-height: 13em;
     animation-name: eye;
-    animation-duration: 0.3s;
+/*     animation-duration: 0.3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
     animation-delay: 1s; 
-    transform: scale(0);
+    transform: scale(1);
 }
 
 .hero-line {
@@ -112,7 +112,7 @@
     animation-delay: 0.5s; 
 }
 
-.o {
+.letter {
     display: inline-block;
     transform: scalex(1);
     transform-origin:54%;
@@ -120,6 +120,10 @@
 
 .letter-animation {
     animation: letter-turn 0.5s ease-in-out 1 forwards;
+}
+
+.letter-reverse {
+    animation: letter-reverse 0.5s ease-in-out 1 forwards;
 }
 
 @keyframes letter-turn {
@@ -131,19 +135,29 @@
         transform: scalex(-1);
 
     }
+}
 
+@keyframes letter-reverse {
+    from {
+        transform: scalex(-1);
+
+    }
+    to {
+        transform: scalex(1);
+
+    }
 }
 
 @keyframes eye {
     from {
-        transform: scale(0);
+        transform: scale(1);
     }
     to {
         transform: scale(1);
 
-    }
-    
+    }    
 }
+
 @keyframes pulse {
     from {
         transform: scale(0%);

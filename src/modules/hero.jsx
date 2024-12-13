@@ -3,34 +3,53 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 
 const Hero = () => {
-    const [runAnimation, setRunAnimation] = useState(true);
+    const [runAnimation, setRunAnimation] = useState(true);  
 
     useEffect(() => {
+        const letterNodes = Array.from(document.querySelectorAll('.letter'));
+        
         if (runAnimation) {
-            const letterO = document.querySelector('.o');
-            letterO.classList.add('letter-animation');  
-            setRunAnimation(false);
+            let chosenLetter = letterNodes[Math.floor((Math.random() * letterNodes.length))];        
+            
+            if (chosenLetter) {
+                if (chosenLetter.classList.contains('letter-reverse')) {
+                    chosenLetter.classList.remove('letter-reverse')
+                    chosenLetter.classList.add('letter-animation');
+                    setRunAnimation(false);
+                }
+                else if (chosenLetter.classList.contains('letter-animation')) {
+                    chosenLetter.classList.remove('letter-animation');
+                    chosenLetter.classList.add('letter-reverse')
+                    setRunAnimation(false);
+                }  
+                else {
+                    chosenLetter.classList.add('letter-animation');
+                    setRunAnimation(false);
+                }          
+            }
+            else 
+            {
+                console.log('Chosen letter not found in DOM');
+            }
 
             setTimeout(() => {
                 setRunAnimation(true);
-                console.log(runAnimation)
-            }, 2500);
-        }
 
-            
-    }, []);
+            }, 3500);
+        }
+    }, [runAnimation])
 
     return (
         <section className='section section--hero'>
             <section className='heading__container heading__container--hero'>
                 <div className='heading-wrapper'>
-                    <h1 className='heading heading__hero--carl'>CARL</h1>
+                    <h1 className='heading heading__hero--carl'>C<span className='letter'>A</span>RL</h1>
                     <h1 className='heading heading__hero--wiren'>WIREN</h1>
                 </div>
                 <span className='hero-line'></span>
                 <div className='heading-wrapper'>
-                    <h1 className='heading heading__hero--frontend'>FR<span className='o'>O</span>NTEND</h1>
-                    <h1 className='heading heading__hero--developer'>DEVELOPER</h1>
+                    <h1 className='heading heading__hero--frontend'>F<span className='letter'>R</span><span className='letter'>O</span>NTEN<span className='letter'>D</span></h1>
+                    <h1 className='heading heading__hero--developer'>D<span className='letter'>E</span>VELO<span className='letter'>P</span>ER</h1>
                 </div>   
                 <section className='heading__status'>
                     <span className='status'>Status:</span>
@@ -46,3 +65,4 @@ const Hero = () => {
 }
 
 export default Hero;
+
