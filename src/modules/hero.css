@@ -1,11 +1,11 @@
 .section--hero {
-    background-image: url('./images/hero-background.avif');
+    background-image: url('./images/hero-background-black.avif');
     object-fit: cover;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    color: var(--black);
+    color: var(--yellow);
     z-index: -1;
 }
 
@@ -17,9 +17,9 @@
     width: 100%; 
     min-width: 20%;
     justify-content: center;
-    margin-left: 14vw;
+    margin-left: 10vw;
     margin-bottom: 1em;
-    gap:0.5em;
+    gap:1em;
 }
 
 .heading__hero--carl, .heading__hero--wiren, .heading__hero--frontend, .heading__hero--developer {
@@ -28,9 +28,10 @@
     letter-spacing: -5px;  
 }
 
+
 .heading__info {
     font-family: 'General Sans';
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.2rem;
     width: 24em;
     margin-left: 4px;
@@ -51,16 +52,17 @@
     min-width: 30%;
     min-height: 30%;
     background-color: transparent;
-    margin-bottom: 25em;
-    margin-right: 10em;
+    margin-bottom: 6em;
+/*     margin-right: 10vw;
+ */
 
 
 }
 
 .image__hero {
-    aspect-ratio: 610 / 419;
-    max-width: 30em;
-    max-height: 25em;
+    aspect-ratio: 900 / 900;
+    max-width: 20em;
+    max-height: 20em;
     animation-name: eye;
 /*     animation-duration: 0.3s;
     animation-timing-function: ease-in-out;
@@ -74,10 +76,10 @@
 .hero-line {
     position: absolute;
     width: 0em;
-    background-color: black;
+    background-color: var(--yellow);
     height: 0.1em;
-    left: 14.4%;
-    top: 18.7em;
+    left: 10.3%;
+    top: 18.3em;
     animation-name: hero-line-animation;
     animation-duration: 0.6s;
     animation-timing-function: ease-out;
@@ -109,17 +111,19 @@
  .button {
     font-size: 1.3rem;
     font-family: 'General Sans Regular';
-    border: 3px solid var(--black);
-    width: 35%;
+    border: 3px solid var(--yellow);
+/*     max-width: 30%;
+ */    min-width: 10%;
+    width: 30%;
     height: 1.7em;
     text-align: center;
-    box-shadow: -3px 3px 0px 0;
-    margin-left: 4px;
+/*     box-shadow: -3px 3px 0px 0;
+ */    margin-left: 4px;
  }
 
  a {
    text-decoration: none;
-   color: var(--black);
+   color: var(--yellow);
    font-family: 'General Sans';
    font-weight: 600;
  }

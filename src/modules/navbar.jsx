@@ -11,10 +11,10 @@ const Navbar = () => {
                     <span className='status__info'>Looking for internship</span>
                 </section> 
                 <a className="navbar__link" href="https://www.github.com/CarlWiren90" rel="noopener noreferrer" target="_blank" aria-label="Go to Github profile">
-                    <img className="navbar__logo" src="./images/github-black.avif" alt="GitHub logo"/>
+                    <img className="navbar__logo" src="./GitHub.avif" alt="GitHub logo"/>
                 </a>
                 <a className="navbar__link" href="https://www.linkedin.com/in/carl-wirén-36990b330" rel="noopener noreferrer" target="_blank" aria-label="Go to Linked in profile">
-                    <img className="navbar__logo" src="./images/linked-in-black.avif" alt="Linked in logo"/>
+                    <img className="navbar__logo" src="./LinkedIn.avif" alt="Linked in logo"/>
                 </a>
             </div>
         </nav>
