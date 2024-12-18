@@ -26,7 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 12em 0 12em;
+    margin: 0 7em 0 7em;
 }
 
 .navbar__logo {
@@ -53,9 +53,12 @@
     display: flex;
     position: relative;
     padding-left: 1.2em;
+    color: var(--yellow);
+
 }
 
 .status__info {
+    color: var(--yellow);
     font-family: 'General Sans';
     font-weight: 500;
     font-size: 1.4rem;
@@ -73,7 +76,7 @@
     display: inline;
     transform: scale(0%);
     position: absolute;
-    background-color: var(--black);
+    background-color: var(--yellow);
     border-radius: 100%;
     animation-name: pulse;
     animation-duration: 2s;

@@ -59,7 +59,7 @@ const Hero = () => {
             </section>
 
             <section className='image__container image__container--hero'>
-                <img className='image image__hero' src="./images/hero-image.png"></img>
+                <img className='image image__hero' src="./images/qr-code.avif"></img>
             </section>
         </section>
     );
