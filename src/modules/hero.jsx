@@ -42,25 +42,25 @@ const Hero = () => {
     return (
         <section className='section section--hero'>
             <section className='heading__container heading__container--hero'>
-                <div className='heading-wrapper'>
+                <div className='heading-wrapper heading-wrapper__name'>
                     <h1 className='heading heading__hero--carl'>CARL</h1>
                     <h1 className='heading heading__hero--wiren'>WIREN</h1>
                 </div>
-                <span className='hero-line'></span>
                 <div className='heading-wrapper'>
-                    <h1 className='heading heading__hero--frontend'><span className='letter'>F</span><span className='letter'>R</span>ONT<span className=''>E</span>N<span className='letter'>D</span></h1>
+                    <h1 className='heading heading__hero--frontend'>F<span className='letter'>R</span>ONT<span className=''>E</span>N<span className='letter'>D</span></h1>
                     <h1 className='heading heading__hero--developer'>D<span className='letter'>E</span>VELO<span className='letter'>P</span>E<span className='letter'>R</span></h1>
                 </div>
                 <p className='heading__info'>I’m a sucker for <span className="bold">modern</span> and <span className='bold'>cool</span> design and I love spending my time creating beautiful applications with <span className='bold'>Javascript</span>, <span className='bold'>Typescript</span> and <span className='bold'>CSS</span>.</p>
+                
                 <section className="button-container">
                     <a className="button button--download-cv" href="/Carl-Wiren-CV-portfolio.pdf" download="CarlWiren-CV.pdf" aria-label="Download CV">Download CV</a>
                     <a className="button button--contact-me" href="mailto:carlwiren90@gmail.com" aria-label="Contact me">Contact me</a>
                 </section>
             </section>
+            <section className='hero__scroll-container'>
+                <span className='scroll-text'>Scroll</span>
+           </section>
 
-            <section className='image__container image__container--hero'>
-                <img className='image image__hero' src="./images/qr-code.avif"></img>
-            </section>
         </section>
     );
 }
