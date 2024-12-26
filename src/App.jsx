@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './modules/navbar'
 import Hero from './modules/hero'
+import Projects from './modules/project'
 
 const App = () => {
 
@@ -8,7 +9,7 @@ const App = () => {
     <>
       <Navbar/>
       <Hero/>
-       {/* <MainContent/> */}
+      <Projects/>
     </>
   )
 }
